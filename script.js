@@ -1,6 +1,6 @@
 /**
  * =====================================================================
- * Cx Store - Script de Interatividade Premium
+ * Cx Store - Script de Interatividade
  * =====================================================================
  * 
  * Funcionalidades:
@@ -9,7 +9,7 @@
  * - Animações de entrada dos elementos
  * - Feedback visual ao adicionar produtos
  * - Menu mobile responsivo
- * - Newsletter
+
  */
 
 // ======================= INICIALIZAÇÃO =======================
@@ -27,6 +27,7 @@ function initCart() {
   const cartCountElement = document.querySelector(".cart-count");
   const cartIcon = document.querySelector(".cart-icon");
   let cartCount = 0;
+
 
   /**
    * Atualiza o contador do carrinho com animação
@@ -184,38 +185,6 @@ function initScrollAnimations() {
   });
 }
 
-// ======================= NEWSLETTER =======================
-function initNewsletter() {
-  const newsletterForm = document.querySelector('.newsletter-form');
-  
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      const emailInput = this.querySelector('input[type="email"]');
-      const submitButton = this.querySelector('button[type="submit"]');
-      const originalButtonText = submitButton.textContent;
-      
-      // Feedback visual
-      submitButton.textContent = 'Inscrevendo...';
-      submitButton.disabled = true;
-      
-      // Simula envio (aqui você conectaria com seu backend)
-      setTimeout(() => {
-        submitButton.textContent = '✓ Inscrito!';
-        submitButton.style.background = '#51cf66';
-        emailInput.value = '';
-        
-        // Restaura o estado original
-        setTimeout(() => {
-          submitButton.textContent = originalButtonText;
-          submitButton.style.background = '';
-          submitButton.disabled = false;
-        }, 3000);
-      }, 1500);
-    });
-  }
-}
 
 // ======================= MENU MOBILE =======================
 function initMobileMenu() {
