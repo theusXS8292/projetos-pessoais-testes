@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cx Store - Streetwear Premium</title>
+  <!-- Link para a folha de estilos CSS externa -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Link para a biblioteca de ícones Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
@@ -12,10 +14,12 @@
   <!-- ======================= CABEÇALHO (HEADER) ======================= -->
   <header class="site-header">
     <div class="container">
+      <!-- Logo da Loja -->
       <div class="logo-container">
         <a href="#"><img src="Logo.jpg" alt="Logo Cx Store"></a>
       </div>
 
+      <!-- Barra de Navegação -->
       <nav class="nav-bar">
         <div class="main-nav">
           <ul>
@@ -23,10 +27,11 @@
             <li><a href="#camisetas">Camisetas</a></li>
             <li><a href="#calcas">Calças</a></li>
             <li><a href="#acessorios">Acessórios</a></li>
-            <li><a href="#sale" class="sale-link">Sale</a></li>
+            <li><a href="#sale" class="sale-link">Promoções</a></li>
           </ul>
         </div>
 
+        <!-- Ações do Cabeçalho: Busca, Login e Carrinho -->
         <div class="header-actions">
           <button class="search-btn action-icon" aria-label="Buscar produtos">
             <i class="fas fa-search"></i>
@@ -34,12 +39,13 @@
           <a href="#" class="action-icon" aria-label="Acessar perfil do usuário">
             <i class="fas fa-user"></i>
           </a>
-          <a href="#" class="cart-icon action-icon" id="openCartBtn" aria-label="Ver carrinho de compras">
+          <a href="#" class="cart-icon action-icon" aria-label="Ver carrinho de compras">
             <i class="fas fa-shopping-bag"></i>
             <span class="cart-count">0</span>
           </a>
         </div>
 
+        <!-- Botão de Menu para Dispositivos Móveis -->
         <button class="menu-toggle" aria-label="Abrir menu de navegação">
           <i class="fas fa-bars"></i>
         </button>
@@ -47,7 +53,7 @@
     </div>
   </header>
 
-  <!-- ======================= HERO BANNER ======================= -->
+  <!-- ======================= BANNER ======================= -->
   <section class="hero-banner">
     <div class="hero-content">
       <h1 class="hero-title">Nova Coleção 2025</h1>
@@ -63,13 +69,13 @@
     <section class="featured-products" id="novidades">
       <div class="container">
         <div class="section-title">
-          <span class="section-tag">Top Picks</span>
+          <span class="section-tag">Ranking de Vendas</span>
           <h2>Mais Vendidos</h2>
           <p class="section-subtitle">Os produtos favoritos da nossa comunidade</p>
         </div>
         <div class="product-grid">
           <!-- Produto 1 -->
-          <article class="product-card" data-id="1" data-name="Camiseta Sufgang Cristal Ball Black" data-price="50.00" data-image="camiseta1.png">
+          <article class="product-card">
             <div class="product-image">
               <img src="camiseta1.png" alt="Camiseta Streetwear Cristal Ball Black" />
               <div class="product-badge">Best Seller</div>
@@ -90,9 +96,9 @@
           </article>
 
           <!-- Produto 2 -->
-          <article class="product-card" data-id="2" data-name="Camiseta Oversized Eu não quero BUXIXO" data-price="50.00" data-image="camiseta2.png">
+          <article class="product-card">
             <div class="product-image">
-              <img src="camiseta2.png" alt="Camiseta Oversized" />
+              <img src="camiseta2.png" alt="Camiseta Oversized com estampa 'Eu não quero BUXIXO'" />
               <div class="product-badge hot">Hot</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -111,9 +117,9 @@
           </article>
 
           <!-- Produto 3 -->
-          <article class="product-card" data-id="3" data-name="Santa Cruz T-Shirt with Flying Eye" data-price="50.00" data-image="camiseta3.png">
+          <article class="product-card">
             <div class="product-image">
-              <img src="camiseta3.png" alt="Camiseta Santa Cruz" />
+              <img src="camiseta3.png" alt="Camiseta Santa Cruz com estampa Flying Eye" />
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
               </div>
@@ -131,9 +137,9 @@
           </article>
 
           <!-- Produto 4 -->
-          <article class="product-card" data-id="4" data-name="Camiseta Oversized High – Dragão Neon" data-price="50.00" data-image="camiseta4.png">
+          <article class="product-card">
             <div class="product-image">
-              <img src="camiseta4.png" alt="Camiseta High Dragão Neon" />
+              <img src="camiseta4.png" alt="Camiseta Oversized High com estampa de Dragão Neon" />
               <div class="product-badge new">New</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -163,9 +169,10 @@
           <p class="section-subtitle">Conforto e estilo para todas as ocasiões</p>
         </div>
         <div class="product-grid">
-          <article class="product-card" data-id="5" data-name="Calça bege Street Style" data-price="70.00" data-image="calca1.png">
+          <!-- Produto 5 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="calca1.png" alt="Calça bege" />
+              <img src="calca1.png" alt="Calça bege estilo Street Style" />
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
               </div>
@@ -182,9 +189,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="6" data-name="Calça Black High" data-price="70.00" data-image="calca2.png">
+          <!-- Produto 6 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="calca2.png" alt="Calça preta High" />
+              <img src="calca2.png" alt="Calça preta da marca High" />
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
               </div>
@@ -201,9 +209,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="7" data-name="Shorts High" data-price="65.00" data-image="shorts.png">
+          <!-- Produto 7 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="shorts.png" alt="Shorts High" />
+              <img src="shorts.png" alt="Shorts da marca High" />
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
               </div>
@@ -220,9 +229,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="8" data-name="Shorts High Cinza" data-price="65.00" data-image="shorts2.png">
+          <!-- Produto 8 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="shorts2.png" alt="Shorts cinza High" />
+              <img src="shorts2.png" alt="Shorts cinza da marca High" />
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
               </div>
@@ -246,14 +256,15 @@
     <section class="featured-products promo-section" id="sale">
       <div class="container">
         <div class="section-title">
-          <span class="section-tag sale-tag">Sale</span>
+          <span class="section-tag sale-tag">Black Friday Bombando</span>
           <h2>Promoções Imperdíveis</h2>
           <p class="section-subtitle">Aproveite os melhores preços</p>
         </div>
         <div class="product-grid">
-          <article class="product-card" data-id="9" data-name="Boné High" data-price="80.00" data-image="boné.png">
+          <!-- Produto 9 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="boné.png" alt="Boné High" />
+              <img src="boné.png" alt="Boné da marca High" />
               <div class="product-badge sale">-15%</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -272,9 +283,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="10" data-name="Shorts High Bege" data-price="50.00" data-image="shorts3.png">
+          <!-- Produto 10 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="shorts3.png" alt="Shorts bege High" />
+              <img src="shorts3.png" alt="Shorts bege da marca High" />
               <div class="product-badge sale">-17%</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -292,9 +304,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="11" data-name="Shorts High Cinza Promo" data-price="50.00" data-image="shorts4.png">
+          <!-- Produto 11 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="shorts4.png" alt="Shorts cinza promo" />
+              <img src="shorts4.png" alt="Shorts cinza da marca High em promoção" />
               <div class="product-badge sale">-17%</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -312,9 +325,10 @@
             </button>
           </article>
 
-          <article class="product-card" data-id="12" data-name="Camiseta High Eco Branca" data-price="40.00" data-image="promo3.png">
+          <!-- Produto 12 -->
+          <article class="product-card">
             <div class="product-image">
-              <img src="promo3.png" alt="Camiseta High Eco" />
+              <img src="promo3.png" alt="Camiseta branca High Eco" />
               <div class="product-badge sale">-20%</div>
               <div class="product-overlay">
                 <button class="quick-view-btn"><i class="fas fa-eye"></i> Ver Detalhes</button>
@@ -335,75 +349,13 @@
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-content">
-          <h2>Fique por dentro das novidades</h2>
-          <p>Cadastre-se e receba as melhores ofertas e lançamentos em primeira mão</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Seu melhor e-mail" required>
-            <button type="submit">Inscrever-se</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ======================= CARRINHO LATERAL (SIDEBAR) ======================= -->
-  <div class="cart-sidebar" id="cartSidebar">
-    <div class="cart-sidebar-overlay"></div>
-    <div class="cart-sidebar-content">
-      <div class="cart-header">
-        <h3>
-          <i class="fas fa-shopping-bag"></i>
-          Meu Carrinho
-          <span class="cart-header-count">(0)</span>
-        </h3>
-        <button class="cart-close-btn" aria-label="Fechar carrinho">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-
-      <div class="cart-items-container">
-        <div class="cart-empty">
-          <i class="fas fa-shopping-bag"></i>
-          <p>Seu carrinho está vazio</p>
-          <span>Adicione produtos para começar!</span>
-        </div>
-        <div class="cart-items-list"></div>
-      </div>
-
-      <div class="cart-footer">
-        <div class="cart-summary">
-          <div class="cart-subtotal">
-            <span>Subtotal:</span>
-            <span class="cart-subtotal-value">R$ 0,00</span>
-          </div>
-          <div class="cart-shipping">
-            <span>Frete:</span>
-            <span class="cart-shipping-value">Calcular</span>
-          </div>
-          <div class="cart-total">
-            <span>Total:</span>
-            <span class="cart-total-value">R$ 0,00</span>
-          </div>
-        </div>
-        <div class="cart-actions">
-          <button class="cart-continue-btn">Continuar Comprando</button>
-          <button class="cart-checkout-btn">
-            <i class="fas fa-lock"></i>
-            Finalizar Compra
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- ======================= RODAPÉ (FOOTER) ======================= -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- Coluna 1: Sobre -->
         <div class="footer-column">
           <h4>Sobre a Cx Store</h4>
           <p>Streetwear autêntico para quem vive a cultura urbana. Qualidade, estilo e atitude em cada peça.</p>
@@ -411,40 +363,22 @@
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
           </div>
         </div>
 
-        <div class="footer-column">
-          <h4>Links Rápidos</h4>
-          <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Termos de Uso</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Trocas e Devoluções</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>Atendimento</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Rastreamento</a></li>
-            <li><a href="#">Formas de Pagamento</a></li>
-            <li><a href="#">Frete e Entrega</a></li>
-          </ul>
-        </div>
-
+      
+        <!-- Coluna 4: Contato -->
         <div class="footer-column">
           <h4>Contato</h4>
           <ul>
-            <li><i class="fas fa-envelope"></i> contato@cxstore.com</li>
-            <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+            <li><i class="fas fa-envelope"></i> caiobethegueli@gmail.com</li>
+            <li><i class="fas fa-phone"></i> (19) 97133-8665</li>
             <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
           </ul>
         </div>
       </div>
 
+      <!-- Copyright -->
       <div class="footer-bottom">
         <p>© 2025 Cx Store. Todos os direitos reservados.</p>
         <div class="payment-methods">
@@ -457,10 +391,12 @@
     </div>
   </footer>
 
+  <!-- Botão de Voltar ao Topo -->
   <button class="back-to-top" aria-label="Voltar ao topo">
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- Link para o arquivo JavaScript externo -->
   <script src="script.js"></script>
 </body>
 </html>
